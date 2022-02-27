@@ -1,10 +1,12 @@
 import { Outlet } from "react-router-dom";
+import Navbar from "./Components/Navbar/Navbar";
 
 export default function AppContainer() {
-  return (
-    <>
-      <nav className="fixed">Navbar</nav>
-      <Outlet />
-    </>
-  );
+    return (
+        <>
+            <Navbar />
+            <div className="pt-14"></div>
+            <Outlet />
+        </>
+    );
 }

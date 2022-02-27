@@ -4,9 +4,14 @@ import { useNavigate } from "react-router-dom";
 export default function Banner() {
     const navigate = useNavigate();
 
-    function handleClick(event: SyntheticEvent) {
+    function handleLogin(event: SyntheticEvent) {
         event.preventDefault();
-        navigate("login");
+        navigate("/login");
+    }
+
+    function handleGallery(event: SyntheticEvent) {
+        event.preventDefault();
+        navigate("/gallery");
     }
 
     return (
@@ -22,9 +27,15 @@ export default function Banner() {
                 <div className="pt-6">
                     <button
                         className="py-5 px-8 text-lg font-semibold border-2 border-white bg-white text-black rounded-md hover:bg-[#FFBD59] hover:text-white transition-all"
-                        onClick={handleClick}
+                        onClick={handleLogin}
                     >
                         Join now
+                    </button>
+                    <button
+                        className="ml-6 py-5 px-8 text-lg font-semibold border-2 border-white bg-white text-black rounded-md hover:bg-[#FFBD59] hover:text-white transition-all"
+                        onClick={handleGallery}
+                    >
+                        Explore
                     </button>
                 </div>
             </div>

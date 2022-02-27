@@ -4,12 +4,12 @@ import Community from "./Components/Community/Community";
 import Footer from "./Components/Footer/Footer";
 
 export default function Landing() {
-  return (
-    <>
-      <Banner />
-      <Features />
-      <Community />
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <Banner />
+            <Features />
+            <Community />
+            <Footer />
+        </>
+    );
 }
