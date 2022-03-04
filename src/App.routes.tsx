@@ -8,6 +8,7 @@ import Login from "./Pages/Login/Login.page";
 import Gallery from "../src/Pages/Gallery/Gallery.page";
 import Profile from "./Pages/Profile/Profile.page";
 import Signup from "./Pages/Signup/Signup.page";
+import Editor from "./Pages/Editor/Editor";
 
 export default function AppRoutes() {
   return (
@@ -20,6 +21,8 @@ export default function AppRoutes() {
 
           <Route path="gallery" element={<Gallery />} />
           <Route path="profile" element={<Profile />} />
+
+          <Route path="editor" element={<Editor />} />
         </Route>
       </Routes>
   );
